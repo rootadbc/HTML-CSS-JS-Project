@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HumanSignal</title>
+    <link rel="stylesheet" href="./popup.css" />
+    <script src="./popup.js" defer></script>
+  </head>
+  <body>
+    <h1>HumanSignal</h1>
+
+    <section>
+      <h2>Filter mode</h2>
+
+      <label>
+        <input type="radio" name="mode" value="flag" />
+        Flag videos with GIF
+      </label>
+
+      <label>
+        <input type="radio" name="mode" value="hide" />
+        Hide videos
+      </label>
+
+      <label>
+        <input type="radio" name="mode" value="off" />
+        Turn off filtering
+      </label>
+    </section>
+
+    <section>
+      <h2>Choose block image</h2>
+
+      <select id="gifSelector">
+        <option value="img/file.png">AI Warning</option>
+        <option value="img/file1.png">Blocked</option>
+        <option value="img/file2.png">Suspicious</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Keyword filters</h2>
+
+      <div id="keywordList"></div>
+
+      <input
+        type="text"
+        id="newKeyword"
+        placeholder="Add keyword, e.g. scam"
+      />
+
+      <button id="addKeywordButton">Add</button>
+    </section>
+
+    <section>
+      <h2>Video search</h2>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search YouTube"
+      />
+
+      <button id="searchButton">Search</button>
+    </section>
+
+    <p id="status"></p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

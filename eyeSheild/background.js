@@ -1,0 +1,1 @@
+console.log("HumanSignal background service worker started");
