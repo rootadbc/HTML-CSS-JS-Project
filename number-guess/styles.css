@@ -1,0 +1,85 @@
+/* 
+<h1>NUMBER GUESS GAME</h1>
+
+<button id="guessBtn">GUESS NUMBER</button>
+
+<p id="printAnswer"></p>
+<p id="attemptTimes"></p>
+*/
+
+/* Apply general styles to the whole page */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    /* Center the game vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+/* Style the heading */
+h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #1e40af;
+    font-size: 2.2rem;
+}
+
+/* Style the Guess Number button */
+#guessBtn {
+    padding: 12px 24px;
+
+    color: white;
+    background-color: #2563eb;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    /* Add a smooth transition to hover effects */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Change the button color when the mouse is over it */
+#guessBtn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* Show a pressed effect when the button is clicked */
+#guessBtn:active {
+    transform: scale(0.98);
+}
+
+/* Style the answer message */
+#printAnswer {
+    margin-top: 25px;
+
+    color: #15803d;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Style the attempts message */
+#attemptTimes {
+    margin-top: 5px;
+
+    color: #fb3c02;
+    font-size: 1rem;
+}
+
+/* Make the button look disabled after the game ends */
+#guessBtn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}

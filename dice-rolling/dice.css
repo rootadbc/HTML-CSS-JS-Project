@@ -1,0 +1,46 @@
+/*
+<div id="container">
+       <h1>DICE ROLLING PROGRAM</h1>
+       <label># of dice:</label>
+        <input id="numOfDice" type="number" value="1" min="1" max="6">
+        <button onclick="rollDice()">Roll Dice</button>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
+    </div>
+    
+*/
+
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+
+}
+button{
+    font-size: 1rem;
+    padding: 5px 5px;
+    border: none;
+    background-color: hsl(240, 87%, 62%);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: hsl(240, 87%, 72%);
+}
+button:active{
+    background-color: hsl(240, 87%, 82%);
+}
+input{
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+#diceResult{
+    margin: 20px;
+}
+#diceImages{
+   margin: 30px;
+}

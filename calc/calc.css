@@ -1,0 +1,76 @@
+body {
+  /* Here we style the body of the calculator */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 6%, 97%);
+}
+
+#calculator {
+  /* Here we style the whole calculator frame */
+  height: 400px;
+  width: 250px;
+  background-color: hsl(0, 3%, 23%);
+  border-radius: 10px;
+
+  overflow: hidden;
+  max-width: 500px;
+}
+
+#display {
+  /* Here we style the input section of the calculator */
+  width: 100%;
+  padding: 15px;
+  font-size: 2rem;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 4%, 44%);
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+#keys {
+  /* Here we adjust the container of the calculator buttons */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+button {
+  /* Here, we style the buttons collectively */
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(0, 4%, 44%);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Here, we style the buttons collectively when hovered over */
+button:hover {
+  background-color: hsl(0, 4%, 60%);
+}
+
+button:active {
+  background-color: hsl(0, 4%, 20%);
+}
+
+/* Here, we style the operator buttons collectively when focused */
+.operatorbtn {
+  background-color: hsl(24, 86%, 50%);
+}
+
+.operatorbtn:hover {
+  background-color: hsl(24, 86%, 65%);
+}
+
+.operatorbtn:active {
+  background-color: hsl(24, 86%, 90%);
+}

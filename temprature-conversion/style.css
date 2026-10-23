@@ -1,0 +1,73 @@
+/*
+<form>
+        <h1>TEMPERATURE CONVERSION</h1>
+        <input type="number" id="textBox" value="0"><br>
+
+        <input type="radio" id="toF" name="unit">
+        <label for="toF">Celsius ~ Fahrenheit</label> <br>
+
+        <input type="radio" id="toC" name="unit">
+        <label for="toC"> Fahrenheit ~ Celsius</label> <br>
+
+        <button type="button" onclick="conver()">Submit</button>
+        <p id="result"> Select a unit</p>
+
+
+    </form>
+
+*/
+
+
+body{
+    background-color: aliceblue;
+}
+
+h1{
+    color:blue;
+}
+
+form{
+    background-color: white;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px hsl(0, 0%, 43%);
+}
+
+#textBox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border:2px solid;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 15px;
+    background-color: hsl(11, 98%, 49%);
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: rgb(251, 110, 97);
+    
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}

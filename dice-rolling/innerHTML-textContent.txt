@@ -1,0 +1,14 @@
+
+
+`textContent` reads or writes **plain text**; HTML tags are treated literally. `innerHTML` reads or writes **HTML markup**, so tags are parsed into elements. 
+
+
+```js
+element.textContent = "<b>Hello</b>";
+// Displays: <b>Hello</b>
+
+element.innerHTML = "<b>Hello</b>";
+// Displays: Hello (bold)
+```
+
+Use `textContent` for user-provided text because it avoids HTML injection/XSS risks. Use `innerHTML` only when you intentionally need to insert trusted HTML. 

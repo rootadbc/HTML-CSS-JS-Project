@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" >
+    <script src="script.js" defer ></script>
+    <title>INTEREST CALC</title>
+</head>
+<body>
+
+    <h1> Interest Calculator</h1>
+
+    <form>
+        <label for="principal">Principal Amount:</label>
+        <input type="number" id="principal">
+   
+        <label for="principal">Interest Rates:</label>
+        <input type="number" id="rate">
+   
+        <label for="principal">Years</label>
+        <input type="number" id="years">
+     
+        
+        <button type="button" onclick="calculate()">Submit</button>
+
+        <!---
+        
+        // onclick="calculate()" = a section in JS (function) , that does and respond to the click of that button.
+        
+        -->
+
+        <p id ="total"> Total: <span id="total-amount">$0.00</span></p>
+
+
+
+    </form>
+    
+</body>
+</html>
