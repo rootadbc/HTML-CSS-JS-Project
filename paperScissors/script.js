@@ -6,10 +6,14 @@ const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 
+// Score Display
+const playerScoreDisplay = document.getElementById("playerScoreDisplay");
+const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 
+let playerScore = 0;
+let computerScore = 0;
 
-
-
+// game logic 
 function playGame(playerChoice){
 
     const computerChoice = choices[Math.floor(Math.random() * 3)];
@@ -59,9 +63,15 @@ function playGame(playerChoice){
     switch(result){
         case "You Win!":
             resultDisplay.classList.add("greenText");
+            // adding score features
+            playerScore++;
+            playerScoreDisplay.textContent = playerScore;
+            // playerScore++ - adds up when the score wins for player
             break;
         case "You Lose!":
             resultDisplay.classList.add("redText");
+            computerScore++;
+            computerScoreDisplay.textContent = computerScore;
             break;
     }
 

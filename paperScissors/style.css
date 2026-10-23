@@ -44,10 +44,16 @@ h2{
 
 /* Introducing the classList - to add text color*/
 
-.greenText{
+.greenText , #playerScoreDisplay{
     color: rgb(63, 234, 63);
 }
 
-.redText{
+.redText, #computerScoreDisplay{
     color: red;
+}
+
+/* Introducing the score Display */
+
+.scoreDisplay{
+    font-size: 1.3rem;
 }
