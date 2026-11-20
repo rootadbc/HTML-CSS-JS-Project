@@ -4,6 +4,7 @@ A collection of small front-end projects built with HTML, CSS, and JavaScript.
 
 ## Projects
 
+- `Restaurant-Page` - Restaurant Page
 - `calc` — Calculator
 - `clock` — Digital clock
 - `counter-project` — Counter
