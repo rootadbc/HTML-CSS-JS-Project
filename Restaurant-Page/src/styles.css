@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #241c18;
+  --brown: #4a3226;
+  --gold: #c9a227;
+  --cream: #f6efe3;
+  --white: #fffdf8;
+  --text: #332a24;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background-color: var(--cream);
+}
+
+header {
+  background-color: var(--dark);
+  color: var(--cream);
+  padding: 2.25rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid var(--gold);
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.35rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+nav button {
+  padding: 0.65rem 1.5rem;
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  background-color: transparent;
+  color: var(--cream);
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+nav button:hover {
+  background-color: var(--gold);
+  color: var(--dark);
+}
+
+#content {
+  flex: 1;
+  width: 100%;
+  max-width: 940px;
+  margin: 2.5rem auto;
+  padding: 3rem 2.5rem;
+  background-color: var(--white);
+  border: 1px solid rgba(74, 50, 38, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 14px 35px rgba(36, 28, 24, 0.14);
+  text-align: center;
+}
+
+.tab-page h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.1rem;
+  color: var(--brown);
+  margin-bottom: 1.4rem;
+}
+
+.tab-page p {
+  max-width: 640px;
+  margin: 0 auto 1.25rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.home img {
+  width: 100%;
+  max-width: 700px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-top: 1.5rem;
+  box-shadow: 0 10px 28px rgba(36, 28, 24, 0.2);
+}
+
+.menu ul {
+  list-style: none;
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.menu li {
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.6rem;
+  background-color: var(--cream);
+  border-radius: 3px;
+  font-size: 1.05rem;
+}
+
+.menu li:last-child {
+  margin-bottom: 0;
+}
+
+.contact p {
+  font-size: 1.05rem;
+}
+
+.site-footer {
+  padding: 1.75rem 1rem;
+  background-color: var(--dark);
+  color: var(--cream);
+  text-align: center;
+  border-top: 3px solid var(--gold);
+}
+
+.site-footer p {
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--cream);
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  #content {
+    margin: 1.25rem;
+    padding: 1.75rem 1.25rem;
+  }
+
+  nav button {
+    padding: 0.55rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .home img {
+    height: 230px;
+  }
+}
+
+/* Keep every tab the same height and prevent scrolling */
+.tab-page {
+  min-height: 420px;
+  max-height: 420px;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Prevent the Home image from creating extra height */
+.home img {
+  height: 220px;
+}
